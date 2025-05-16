@@ -4,8 +4,22 @@
 int main()
 {
     char word [100];
-    int shift = 3;     //ceaser cipher shift amount
+    int shift;     //ceaser cipher shift amount
     int i = 0;
+
+    printf("please select the shift size: \n" );
+    scanf("%d", &shift);
+    fflush(stdout);
+
+    while (getchar() != '\n');
+
+
+    //creation of shift file
+    FILE *fptr2;
+    fptr2 = fopen("Encryption.txt", "w");
+    fprintf(fptr2, "%d", shift);
+    fclose(fptr2);
+
 
     //creation of a file
     FILE *fptr;
