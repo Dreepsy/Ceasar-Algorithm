@@ -1,8 +1,25 @@
-# Ignore build artifacts
+# macOS system files
+.DS_Store
 
+# Build artifacts and compiled binaries
 *.o
-test
+*.out
+*.exe
+Cracker
+Encryption
+
+# Debug and build folders
 outDebug/
 build/
 output/
+Cracker.dSYM/
+
+# Editor/IDE settings
 .vscode/
+*.plist
+*.log
+*.swp
+
+# Other potentially unnecessary files
+*.yml
+
